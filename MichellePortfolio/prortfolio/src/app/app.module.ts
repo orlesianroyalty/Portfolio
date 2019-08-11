@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppComponent } from './app.component';
 import { MatToolbarModule } from '@angular/material';
@@ -22,7 +23,8 @@ const paths: Routes = [
   imports: [
     BrowserModule,
     MatToolbarModule,
-    RouterModule.forRoot(paths)
+    RouterModule.forRoot(paths),
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
