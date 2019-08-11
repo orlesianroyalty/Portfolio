@@ -1,8 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div>
-  <mat-toolbar>
-    
-  </mat-toolbar>
-</div>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<nav>
+  <div>
+    <mat-toolbar>
+      <div>
+        <button mat-button routerLink="/home" routerLinkActive="active"><i class="material-icons">home</i></button>
+        <button mat-button><i class="material-icons">face</i></button>
+        <button mat-button routerLink="/project-list" routerLinkActive="active">Projects</button>
+      </div>
+    </mat-toolbar>
+  </div>
+</nav>
 
 <router-outlet></router-outlet>
