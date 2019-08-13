@@ -1,6 +1,26 @@
-<mdb-carousel [animation]="'slide'">
+<mdb-carousel [animation]="'slide'" [interval]="0">
     <mdb-carousel-item>
-        <div><img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" /></div>
+        <div class="container-div">
+            <div class="left-div"><img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" /><img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" /></div>
+            <div class="right-div">
+                <h1 class="title">Gaia</h1>
+                <div>
+                    <button mat-button class="project-lead">Project Lead</button>
+                    <button mat-button class="programmer">Programmer</button>
+                </div>
+                <br>
+                <div>
+                    <h2 class="section-header">Overview</h2>
+                    <p>Gaia is a 2D sidescrolling game in a 3D world. It was inspired by Paper Mario in that respect. The game was started as a game for a game jam about versatile verbs on a team of only two people but then expanded to a year long project with a larger team of students. </p>
+                    <p>You play as Gaia who is searching for three different colored shards. These shards give Gaia different forms, Ranger, Desert Wanderer, and Arctic Bear. Each form gives Gaia unique abilities that combo with normal mechanics such as jumping to offer versatile combat abilities. Once all three shards are collected the boss, Fenrir, will spawn. Fenrir possess the ability to change into any of the three forms.</p>
+                </div>
+                <br>
+                <div>
+                    <h2 class="section-header">Goal</h2>
+                    <p>The goal for this project was to explore versatile verbs. This was acheived with the player's abilities since buttons would have to pressed for different lengths of time or combine different button presses to make it across platforms.</p>
+                </div>
+            </div>
+        </div>
     </mdb-carousel-item>
     <mdb-carousel-item>
         <div><img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" /></div>

@@ -7,10 +7,11 @@ import { ProjectlistComponent } from './projectlist/projectlist.component';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
 
 const paths: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: '', redirectTo:'/home', pathMatch: 'full'},
+  {path: '', redirectTo:'/project-list', pathMatch: 'full'},
   {path: 'project-list', component: ProjectlistComponent}
 ];
 
@@ -26,7 +27,8 @@ const paths: Routes = [
     MatToolbarModule,
     RouterModule.forRoot(paths),
     CarouselModule.forRoot(),
-    WavesModule.forRoot()
+    WavesModule.forRoot(),
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

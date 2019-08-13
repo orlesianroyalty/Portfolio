@@ -1,15 +1,31 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<nav>
-  <div>
-    <mat-toolbar>
+<div style="margin: auto;">
+  <div style="width:25%; float:left">
+    <mat-card style="text-align: center; background-color: turquoise">
+      <div>Michelle Brannan</div>
+      <br>
       <div>
-        <button mat-button routerLink="/home" routerLinkActive="active"><i class="material-icons">home</i></button>
-        <button mat-button><i class="material-icons">face</i></button>
-        <button mat-button routerLink="/project-list" routerLinkActive="active">Projects</button>
+        <p>Hello! I am a programmer and avid RPG fan.</p>
+        <p>I graduated from Auburn University with a bachelor's degree in software engineering in 2019. I was a member of Auburn's video game development club, TigerDev, for 4 years and served as an officer for one. There I learned about different engines, game development concepts, and worked on various projects. There my love for games grew exponentially.</p>
+        <p>I have a passion for video games, learning new technologies, and creating memorable experiences.</p>
       </div>
-    </mat-toolbar>
+    </mat-card>
   </div>
-</nav>
-
-<router-outlet></router-outlet>
+  <!--<nav>
+    <div>
+      <mat-toolbar>
+        <div>
+          <button mat-button routerLink="/home" routerLinkActive="active"><i class="material-icons">home</i></button>
+          <button mat-button><i class="material-icons">face</i></button>
+          <button mat-button routerLink="/project-list" routerLinkActive="active">Projects</button>
+        </div>
+      </mat-toolbar>
+    </div>
+  </nav>-->
+  
+  <div style="width:75%; float: right">
+    <router-outlet></router-outlet>
+  </div>
+  
+</div>
