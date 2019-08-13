@@ -1,6 +1,7 @@
 
 .container-div {
     margin: auto;
+    margin-top: 10%;
 }
 .title {
     font-size: 20pt;
@@ -19,16 +20,29 @@
     padding: 10px;
 }
 .programmer {
-    margin-right: 20px;
     font-size: 8pt;
+    border-radius: 3px;
+    display: inline-block;
+    max-width: 50%; 
+    margin-right: 10px;
 }
+
 .project-lead {
     font-size: 8pt;
-    margin-left: 20px;
+    border-radius: 3px;
+    display: inline-block;
+    max-width: 50%;
 }
 .section-header {
     font-size: 16pt;
 }
 p {
     font-size: 10pt;
+}
+.header-div {
+    max-height: 150px;
+    min-width: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: #000000ab;
 }
