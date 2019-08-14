@@ -52,6 +52,7 @@ p {
     background-color: black!important;
 }
 .arrow-back {
+    padding: 10px;
     transition: transform .2s;
 }
 .arrow-back:hover {
@@ -60,7 +61,6 @@ p {
 .back-button {
     color: white;
     float: left;
-    padding: 10px;
 }
 .back-button:hover {
     animation: wiggle 0.5s infinite;
