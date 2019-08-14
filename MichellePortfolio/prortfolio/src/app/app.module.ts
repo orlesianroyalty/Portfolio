@@ -8,6 +8,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
 import { ProjectsOverviewComponent } from './projects-overview/projects-overview.component';
 
 const paths: Routes = [
@@ -31,7 +32,8 @@ const paths: Routes = [
     RouterModule.forRoot(paths),
     CarouselModule.forRoot(),
     WavesModule.forRoot(),
-    MatCardModule
+    MatCardModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
