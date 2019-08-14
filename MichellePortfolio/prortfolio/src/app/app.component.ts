@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { ProjectlistComponent } from './projectlist/projectlist.component';
-import { routerTransition } from './animations';
+import { routerTransition, infoAnimation } from './animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [routerTransition]
+  animations: [routerTransition, infoAnimation]
 })
 export class AppComponent {
   title = 'prortfolio';

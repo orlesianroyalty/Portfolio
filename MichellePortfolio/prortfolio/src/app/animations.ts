@@ -28,10 +28,10 @@ export const routerTransition = trigger('routerTransition', [
         ])   
   ])
 
-  export const headerAnimation = trigger('headerAnimation', [
+  export const infoAnimation = trigger('infoAnimation', [
       transition('* <=> *', [
-          query(':enter, :leave', style({position: 'fixed', width: '75%'}), {optional: true}),
-          query('.header', style({opacity: 0}), {optional: true}),
+          query(':enter, :leave', style({position: 'fixed', width: '25%'}), {optional: true}),
+          query('.card-info', style({opacity: 0}), {optional: true}),
           group ([
               query(':enter', [
                   style({transform: 'translateX(100%)'}),
@@ -42,6 +42,9 @@ export const routerTransition = trigger('routerTransition', [
                   animate('0.5s ease-in-out', style({transform: 'tranlsateX(-100%'}))
               ], {optional: true})
           ]),
-
+          query(':enter .card-info', stagger(0, [
+              style({transform: 'translateY(100px)'}),
+              animate('1s ease-in-out', style({transform: 'translateY(0px)', opacity: 1})),
+          ]), {optional: true}),
       ])
   ])
