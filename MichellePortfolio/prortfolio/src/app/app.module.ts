@@ -8,18 +8,21 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
+import { ProjectsOverviewComponent } from './projects-overview/projects-overview.component';
 
 const paths: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: '', redirectTo:'/project-list', pathMatch: 'full'},
-  {path: 'project-list', component: ProjectlistComponent}
+  {path: '', redirectTo:'/project-overview', pathMatch: 'full'},
+  {path: 'project-list', component: ProjectlistComponent},
+  {path: 'project-overview', component: ProjectsOverviewComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectlistComponent,
-    HomeComponent
+    HomeComponent,
+    ProjectsOverviewComponent
   ],
   imports: [
     BrowserModule,
