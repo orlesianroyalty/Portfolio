@@ -11,6 +11,7 @@
     //float: left;
     //margin-left: 0;
     padding: 10px;
+    margin-left: 20px;
     display: inline-block;
 }
 .right-div {
@@ -44,5 +45,12 @@ p {
     min-width: 100%;
     position: absolute;
     text-align: center;
+    color: white;
     background-color: #000000ab;
+}
+.carousel-control-prev-icon {
+    background-color: black!important;
+}
+.carousel-control-prev {
+    filter: invert(100%);
 }
