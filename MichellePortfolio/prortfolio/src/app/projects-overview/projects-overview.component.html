@@ -4,13 +4,22 @@
 <div>
     <mat-grid-list cols="3" rowHeight="3:2">
         <mat-grid-tile>
-            Gaia
+            <a [routerLink]="['/project-list', 0]">Gaia</a>
         </mat-grid-tile>
         <mat-grid-tile>
-            The Forest
+            <a [routerLink]="['/project-list', 1]">The Forest</a>
         </mat-grid-tile>
         <mat-grid-tile>
             TigerBook Social Network
+        </mat-grid-tile>
+        <mat-grid-tile>
+            Snakes and Ladders
+        </mat-grid-tile>
+        <mat-grid-tile>
+            Home
+        </mat-grid-tile>
+        <mat-grid-tile>
+            Dracarys
         </mat-grid-tile>
     </mat-grid-list>
 </div>

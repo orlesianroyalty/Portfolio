@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CarouselModule, WavesModule } from 'angular-bootstrap-md'
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-projectlist',
@@ -7,10 +8,17 @@ import { CarouselModule, WavesModule } from 'angular-bootstrap-md'
   styleUrls: ['./projectlist.component.scss']
 })
 export class ProjectlistComponent implements OnInit {
+  private carouselID: any;
 
-  constructor() { }
+
+  constructor(private actRoute: ActivatedRoute) { 
+  
+  }
 
   ngOnInit() {
+    this.carouselID = this.actRoute.snapshot.paramMap.get("id");
+    
+    
   }
 
 }

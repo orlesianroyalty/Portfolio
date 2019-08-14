@@ -14,8 +14,8 @@ import { ProjectsOverviewComponent } from './projects-overview/projects-overview
 const paths: Routes = [
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo:'/project-overview', pathMatch: 'full'},
-  {path: 'project-list', component: ProjectlistComponent},
-  {path: 'project-overview', component: ProjectsOverviewComponent}
+  {path: 'project-overview', component: ProjectsOverviewComponent},
+  {path: 'project-list/:id', component: ProjectlistComponent},
 ];
 
 @NgModule({
