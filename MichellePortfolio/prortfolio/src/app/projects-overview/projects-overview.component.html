@@ -2,7 +2,7 @@
     <div><h1 class="title">Projects</h1></div>
 </div>
 <div>
-    <mat-grid-list cols="3" rowHeight="3:2">
+    <mat-grid-list cols="3" rowHeight="3:2" [@simpleFadeAnimation]="'in'">
         <mat-grid-tile>
             <a [routerLink]="['/project-list', 0]">Gaia</a>
         </mat-grid-tile>
