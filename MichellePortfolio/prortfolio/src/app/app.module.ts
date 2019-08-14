@@ -13,8 +13,8 @@ import { ProjectsOverviewComponent } from './projects-overview/projects-overview
 
 const paths: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: '', redirectTo:'/project-overview', pathMatch: 'full'},
-  {path: 'project-overview', component: ProjectsOverviewComponent},
+  {path: '', redirectTo:'/project-overview', pathMatch: 'full', data: {state: 'overview'}},
+  {path: 'project-overview', component: ProjectsOverviewComponent, data: {state: 'overview'}},
   {path: 'project-list/:id', component: ProjectlistComponent},
 ];
 

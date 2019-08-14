@@ -1,7 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<div style="width:75%; float: left;">
-    <router-outlet></router-outlet>
+<div style="width:75%; float: left;" [@routerTransition]="getState(o)">
+    <router-outlet #o="outlet"></router-outlet>
   </div>
 <div style="margin: auto;">
   <div style="width:25%; float:right;">
