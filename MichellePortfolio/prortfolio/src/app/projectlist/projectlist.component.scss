@@ -51,6 +51,12 @@ p {
 .carousel-control-prev-icon {
     background-color: black!important;
 }
+.arrow-back {
+    transition: transform .2s;
+}
+.arrow-back:hover {
+    transform: scale(1.5);
+}
 .back-button {
     color: white;
     float: left;
