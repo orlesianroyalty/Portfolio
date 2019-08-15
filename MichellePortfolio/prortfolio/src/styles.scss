@@ -5,4 +5,8 @@
     top: 50%!important;
     background-color: black!important;
     max-width: 30px!important;
+    display: block!important;
+}
+.carousel-item.active {
+    display: block!important;
 }
