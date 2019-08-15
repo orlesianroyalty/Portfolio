@@ -5,7 +5,8 @@ export const routerTransition = trigger('routerTransition', [
       query(':enter, :leave', style({position: 'fixed', width: '75%'}), {optional:true}),
       query('.tile', style({opacity: 0}), {optional: true}),
       query('.header-div', style({opacity: 0, width: '100%'}), {optional: true}),
-      query('.container-div', style({opacity: 0}), {optional: true}),
+      query('.left-div', style({opacity: 0}), {optional: true}),
+      query('.right-div', style({opacity: 0}), {optional: true}),
       //query('.button-container', style({opacity: 0}), {optional: true}),
       //query('.button-container-prev', style({opacity: 0}), {optional: true}),
       group ([
@@ -27,8 +28,12 @@ export const routerTransition = trigger('routerTransition', [
             style({transform: 'translateY(100px)'}),
             animate('1s ease-in-out', style({transform: 'translateY(0px)', opacity: 1})),
         ]), {optional: true}),
-        query(':enter .container-div', [
-            style({transform: 'translateY(-100px)'}),
+        query(':enter .left-div', [
+            style({transform: 'translateY(100px)'}),
+            animate('1s ease-in-out', style({transform: 'translateX(0px)', opacity: 1})),
+        ], {optional: true}),
+        query(':enter .right-div', [
+            style({transform: 'translateY(100px)'}),
             animate('1s ease-in-out', style({transform: 'translateX(0px)', opacity: 1})),
         ], {optional: true}),
       ])
