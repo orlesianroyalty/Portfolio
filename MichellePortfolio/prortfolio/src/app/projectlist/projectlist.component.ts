@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./projectlist.component.scss']
 })
 export class ProjectlistComponent implements OnInit {
-  private carouselID: any;
+  carouselID: any;
 
 
   constructor(private actRoute: ActivatedRoute) { 
