@@ -5,6 +5,7 @@ export const routerTransition = trigger('routerTransition', [
       query(':enter, :leave', style({position: 'fixed', width: '75%'}), {optional:true}),
       query('.tile', style({opacity: 0}), {optional: true}),
       query('.header-div', style({opacity: 0, width: '100%'}), {optional: true}),
+      query('.container-div', style({opacity: 0}), {optional: true}),
       query('.button-container', style({opacity: 0}), {optional: true}),
       query('.button-container-prev', style({opacity: 0}), {optional: true}),
       group ([
@@ -16,10 +17,6 @@ export const routerTransition = trigger('routerTransition', [
               style({transform: 'translateX(0%)'}),
               animate('0.5s ease-in-out', style({transform: 'translateX(-100%)'}))
           ], {optional: true}),
-          query(':leave .container-div', [
-              style({transform: 'translateX(0%)'}),
-              animate('0.5s ease-in-out', style({transform: 'translateX(-100%)'}))
-          ])
       ]),
       sequence ([
         query(':enter .header-div', stagger(400, [
@@ -38,9 +35,6 @@ export const routerTransition = trigger('routerTransition', [
         ])   
   ])
 
-  export const slideAnimation = trigger('slideAnimation', [
-    transition('ProjectListComponent <=> ')
-  ])
 
   export const infoAnimation = trigger('infoAnimation', [
       
