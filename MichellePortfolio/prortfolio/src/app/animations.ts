@@ -6,8 +6,8 @@ export const routerTransition = trigger('routerTransition', [
       query('.tile', style({opacity: 0}), {optional: true}),
       query('.header-div', style({opacity: 0, width: '100%'}), {optional: true}),
       query('.container-div', style({opacity: 0}), {optional: true}),
-      query('.button-container', style({opacity: 0}), {optional: true}),
-      query('.button-container-prev', style({opacity: 0}), {optional: true}),
+      //query('.button-container', style({opacity: 0}), {optional: true}),
+      //query('.button-container-prev', style({opacity: 0}), {optional: true}),
       group ([
           query(':enter', [
               style({transform: 'translateX(100%'}),
