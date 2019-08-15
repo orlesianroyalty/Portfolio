@@ -28,7 +28,7 @@ export const routerTransition = trigger('routerTransition', [
             animate('1s ease-in-out', style({transform: 'translateY(0px)', opacity: 1})),
         ]), {optional: true}),
         query(':enter .container-div', [
-            style({transform: 'translateX(-100px)'}),
+            style({transform: 'translateY(-100px)'}),
             animate('1s ease-in-out', style({transform: 'translateX(0px)', opacity: 1})),
         ], {optional: true}),
       ])
