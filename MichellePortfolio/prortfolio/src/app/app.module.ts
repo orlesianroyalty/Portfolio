@@ -10,12 +10,14 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ProjectsOverviewComponent } from './projects-overview/projects-overview.component';
+import { TheForestComponent } from './the-forest/the-forest.component';
 
 const paths: Routes = [
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo:'/project-overview', pathMatch: 'full', data: {state: 'overview'}},
   {path: 'project-overview', component: ProjectsOverviewComponent, data: {state: 'overview'}},
-  {path: 'project-list/:id', component: ProjectlistComponent},
+  {path: 'project-list', component: ProjectlistComponent},
+  {path: 'the-forest', component: TheForestComponent}
 ];
 
 @NgModule({
@@ -23,7 +25,8 @@ const paths: Routes = [
     AppComponent,
     ProjectlistComponent,
     HomeComponent,
-    ProjectsOverviewComponent
+    ProjectsOverviewComponent,
+    TheForestComponent
   ],
   imports: [
     BrowserModule,
