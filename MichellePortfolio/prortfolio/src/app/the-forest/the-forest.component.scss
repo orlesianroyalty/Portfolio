@@ -26,7 +26,11 @@
     max-width: 50%; 
     margin-right: 10px;
 }
-
+.event {
+    display: inline-block;
+    max-width: 50%;
+    margin-left: 10px;
+}
 .project-lead {
     font-size: 8pt;
     border-radius: 3px;

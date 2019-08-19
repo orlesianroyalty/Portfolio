@@ -26,11 +26,7 @@
     max-width: 50%; 
     margin-right: 10px;
 }
-.event {
-    display: inline-block;
-    max-width: 50%;
-    margin-left: 10px;
-}
+
 .project-lead {
     font-size: 8pt;
     border-radius: 3px;
@@ -51,9 +47,36 @@ p {
     color: white;
     background-color: #000000ab;
 }
-.arrow-back {
+.arrow-back{
     padding: 10px;
     transition: transform .2s;
+}
+.arrow-forward {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+.arrow-prev {
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+.button-container {
+    background-color: rgba(0, 0, 0, 0.38);
+    top: 50%;
+    position: absolute;
+    left: 70%;
+}
+.button-container-prev {
+    background-color: rgba(0, 0, 0, 0.38);
+    top: 50%;
+    position: absolute;
+    margin-left: -20px;
+}
+.button-container:hover, .button-container-prev:hover {
+    background-color: black;
 }
 .arrow-back:hover {
     transform: scale(1.5);

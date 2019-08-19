@@ -11,13 +11,22 @@ import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { ProjectsOverviewComponent } from './projects-overview/projects-overview.component';
 import { TheForestComponent } from './the-forest/the-forest.component';
+import { TigerbookComponent } from './tigerbook/tigerbook.component';
+import { DracarysComponent } from './dracarys/dracarys.component';
+import { SnakesladdersComponent } from './snakesladders/snakesladders.component';
+import { DblockscreenComponent } from './dblockscreen/dblockscreen.component';
+import { IconsModule } from 'angular-bootstrap-md'
 
 const paths: Routes = [
   {path: 'home', component: HomeComponent},
   {path: '', redirectTo:'/project-overview', pathMatch: 'full', data: {state: 'overview'}},
   {path: 'project-overview', component: ProjectsOverviewComponent, data: {state: 'overview'}},
   {path: 'project-list', component: ProjectlistComponent},
-  {path: 'the-forest', component: TheForestComponent}
+  {path: 'the-forest', component: TheForestComponent},
+  {path: 'dracarys', component: DracarysComponent},
+  {path: 'snakesladders', component: SnakesladdersComponent},
+  {path: 'tigerbook', component: TigerbookComponent},
+  {path: 'dblockscreen', component: DblockscreenComponent}
 ];
 
 @NgModule({
@@ -26,7 +35,11 @@ const paths: Routes = [
     ProjectlistComponent,
     HomeComponent,
     ProjectsOverviewComponent,
-    TheForestComponent
+    TheForestComponent,
+    TigerbookComponent,
+    DracarysComponent,
+    SnakesladdersComponent,
+    DblockscreenComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +49,8 @@ const paths: Routes = [
     CarouselModule.forRoot(),
     WavesModule.forRoot(),
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    IconsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
