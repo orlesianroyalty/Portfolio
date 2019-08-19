@@ -19,7 +19,7 @@ import { IconsModule } from 'angular-bootstrap-md'
 
 const paths: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: '', redirectTo:'/project-overview', pathMatch: 'full', data: {state: 'overview'}},
+  {path: '', redirectTo:'/project-list', pathMatch: 'full', data: {state: 'overview'}},
   {path: 'project-overview', component: ProjectsOverviewComponent, data: {state: 'overview'}},
   {path: 'project-list', component: ProjectlistComponent},
   {path: 'the-forest', component: TheForestComponent},
