@@ -1,11 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<div style="width:75%; float: left;" [@routerTransition]="getState(o)">
-    <router-outlet #o="outlet"></router-outlet>
-  </div>
-<div style="margin: auto;" class="card-about">
+<div>
+    <router-outlet></router-outlet>
+  </div> 
+<!--
+div style="margin: auto;" class="card-about">
   <div style="width:25%; float:right;">
-    <mat-card class="card-info" [@infoAnimation] style="text-align: center; height: 1000px; background-color: #837de8; color: white;">
+    <mat-card class="card-info" style="text-align: center; height: 1000px; background-color: #837de8; color: white;">
       <div>Michelle Brannan</div>
       <br>
       <div>
@@ -21,6 +22,7 @@
       </div>
     </mat-card>
   </div>
+-->
   <!--<nav>
     <div>
       <mat-toolbar>
@@ -34,4 +36,4 @@
   </nav>-->
   
   
-</div>
+
