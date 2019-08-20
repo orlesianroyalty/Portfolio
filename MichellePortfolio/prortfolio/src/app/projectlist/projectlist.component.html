@@ -3,7 +3,7 @@
         <div class="item-div">
             <div class="about-me">
                 <div>Michelle Brannan</div>
-                <br>
+                
                 <div>
                     <p>Hello! I am a programmer and avid RPG fan.</p>
                     <p>
@@ -11,8 +11,8 @@
                     </p>
                     <p>I have a passion for programming, video games, learning new technologies, artificial intelligence, and creating memorable experiences.</p>
                 </div>
-                <div style="font-size: 10pt"><i class="material-icons" style="font-size: 12pt">mail</i> rmb0047@auburn.edu</div>
-                <br>
+                <div style="font-size: 9pt"><i class="material-icons" style="font-size: 12pt">mail</i> rmb0047@auburn.edu</div>
+                
                 <div>
                     <a href="https://github.com/orlesianroyalty" style="margin-right: 5%"><i class="fab fa-github" style="font-size: 16pt"></i></a>
                     <a href="https://www.linkedin.com/in/michelle-brannan-045804149/"><i class="fab fa-linkedin-in" style="font-size: 16pt"></i></a>
@@ -22,298 +22,304 @@
     </mdb-carousel-item>
     <mdb-carousel-item>
         <div class="item-div">
-            <div class="header-div">
-                <a class="back-button" routerLink="/project-overview"><i class="material-icons arrow-back">arrow_back</i></a>
-                <div><h1 class="title">Gaia</h1></div>
-                <div class="programmer">
-                    <a><i class="material-icons">code</i><span style="display: block; margin-top: -10px; font-size: 10pt;">C#</span></a>
-                </div>
-               <div class="project-lead">
-                <a><i class="material-icons">videogame_asset</i><span style="display: block; margin-top: -10px; font-size: 10pt;">Project Lead</span></a>  
-               </div>
-               <div class="event">
-                    <a><i class="material-icons">people</i><span style="display: block; margin-top: -10px; font-size: 10pt;">Group Project</span></a>
-                </div>
-            </div>
             <div class="container-div">
                 <div class="left-div">
-                       <!--
-                        <div class="button-container-prev"><a><i class="material-icons arrow-prev">arrow_back</i></a></div>
-                       --> 
-                    <img class="d-block w-100" style="width: 88%" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" /><img class="d-block w-100" style="width: 88%" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" />
+                    <mdb-carousel [animation]="'slide'" [interval]="'0'">
+                        <mdb-carousel-item>
+                            <img class="d-block w-100"  src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" />
+                        </mdb-carousel-item>
+                        <mdb-carousel-item>
+                             
+                        </mdb-carousel-item>
+                    </mdb-carousel>
                 </div>
                 <div class="right-div">
+                    <div>
+                        <h1 class="title">Gaia</h1>
+                        <div class="icons code-icon">
+                            <a><i class="material-icons">code</i><span style="margin-top: -10px; font-size: 9pt;">C#</span></a>
+                        </div>
+                        <div class="icons not-first-icon group-icon">
+                            <a><i class="material-icons">people</i><span style="margin-top: -10px; font-size: 9pt;">Group Project</span></a>
+                        </div>
+                        <div class="icons not-first-icon leader-icon">
+                            <a><i class="material-icons">face</i><span style="margin-top: -10px; font-size: 9pt;">Project Lead</span></a>
+                        </div>
+                        <br>
+                        <div class="description">
+                            <h2 class="section-header">Overview</h2>
+                            <p>Gaia is a 2D sidescrolling game in a 3D world, inspired by Paper Mario. The game was originally for a game jam about versatile verbs on a team of only two people but then expanded to a year long project with a larger team of students. </p>
+                        </div>
+                        <div class="description">
+                            <h2 class="section-header">Goal</h2>
+                            <p>The goal for this project was to explore versatile verbs. This was acheived with the player's abilities since buttons would have to pressed for different lengths of time or combine different button presses to make it across platforms.</p>
+                        </div>
+                    </div>
                     <!--
                         <div class="button-container"><a routerLink="/the-forest"><i class="material-icons arrow-forward">arrow_forward</i></a></div>
                     -->
-                    <br>
-                    <div style="width: 88%">
-                        <h2 class="section-header">Overview</h2>
-                        <p>Gaia is a 2D sidescrolling game in a 3D world, inspired by Paper Mario. The game was originally for a game jam about versatile verbs on a team of only two people but then expanded to a year long project with a larger team of students. </p>
-                        
-                    </div>
-                    <br>
-                    <div style="width: 88%">
-                        <h2 class="section-header">Goal</h2>
-                        <p>The goal for this project was to explore versatile verbs. This was acheived with the player's abilities since buttons would have to pressed for different lengths of time or combine different button presses to make it across platforms.</p>
-                    </div>
-                    <br>
-                    <div style="width: 88%">
-                        <h2 class="section-header">My Role</h2>
-                        <p>I helped come up with the concept for Gaia. I was the project leader for this project after the initial game jam. I assigned tasks to my team members. I also hand drew some of the art used such as the flora and Gaia. I also wrote code for some of Gaia's abilities and wrote the code for Fenrir's AI statemachine for the boss battle.</p>
-                    </div>
+                </div>
+                <div class="role-div">
+                    <h2 class="section-header">My Role</h2>
+                    <p>I helped come up with the concept for Gaia. I was the project leader for this project after the initial game jam. I assigned tasks to my team members. I also hand drew some of the art used such as the flora and Gaia. I also wrote code for some of Gaia's abilities and wrote the code for Fenrir's AI statemachine for the boss battle.</p>
                 </div>
             </div>
         </div>
     </mdb-carousel-item>
     <mdb-carousel-item>
         <div class="item-div">
-            <div class="header-div">
-                <a class="back-button" routerLink="/project-overview"><i class="material-icons arrow-back">arrow_back</i></a>
-                <div><h1 class="title">The Forest</h1></div>
-                <div class="programmer">
-                    <a><i class="material-icons">code</i><span style="display: block; margin-top: -10px; font-size: 10pt;">C#</span></a>
-                </div>
-                <div class="project-lead">
-                    <a><i class="material-icons">people</i><span style="display: block; margin-top: -10px; font-size: 10pt;">Group Project</span></a>
-                </div>
-                <div class="event">
-                    <a><mdb-icon far icon="calendar-alt"></mdb-icon><span style="display: block; margin-top: -4px; font-size: 10pt;">Hackathon</span></a>
-                </div>
-            </div>
             <div class="container-div">
-                <div class="left-div"><img class="d-block w-100" style="width: 88%" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" /><img class="d-block w-100" style="width: 88%" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" /></div>
+                <div class="left-div">
+                    <mdb-carousel [animation]="'slide'" [interval]="'0'">
+                        <mdb-carousel-item>
+                            <iframe [src]='videoForest' width="100%" height="250px" frameborder="0" allowfullscreen></iframe>
+                        </mdb-carousel-item>
+                        <mdb-carousel-item>
+                            <img class="d-block w-100"  src="../../assets/images/ForestControls.png" />
+                        </mdb-carousel-item>
+                    </mdb-carousel>
+                    </div>
                 <div class="right-div">
-                <br>
-                    <div style="width: 88%">
-                        <h2 class="section-header">Overview</h2>
-                        <p>The Forest is a horror game in which the player is camping in the forest. Your goal as the player is to escape the forest before your flashlight battery dies. If curiosity gets the better of you, you can attempt to find all of the clues about the forest before your battery dies. </p>
-                        <p>This game was made for the hackathon VandyHacks. We chose to combine Microsoft's Mixer API with Unity to make an interactive game when livestreamed.</p>
-                        <p>The player (the live-streamer) starts up the game and is given an authentication code that viewers will need to submit through Mixer.com/go to have access to the interactivity of the game. From there, the viewer will see a list of buttons mapped like a controller on their channel page on Mixer.com. These buttons will allow the viewer to spawn enemies directly behind the player to try to scare them or leave an in-game note for the live-streamer to read. There are three different types of notes and each type of note has three variations.</p>
+                    <div>
+                        <h1 class="title">The Forest</h1>
+                        <div class="icons code-icon">
+                            <a><i class="material-icons">code</i><span style="margin-top: -10px; font-size: 9pt;">C#</span></a>
+                        </div>
+                        <div class="icons not-first-icon group-icon">
+                            <a><i class="material-icons">people</i><span style="margin-top: -10px; font-size: 9pt;">Group Project</span></a>
+                        </div>
+                        <div class="icons not-first-icon event-icon">
+                            <a><mdb-icon far icon="calendar-alt"></mdb-icon><span style="margin-top: -10px; font-size: 9pt;">Hackathon</span></a>
+                        </div>
+                        <br>
+                        <div class="description">
+                            <h2 class="section-header">Overview</h2>
+                            <p>The Forest is a 3D horror game in which the player is camping in the forest. Your goal as the player is to escape the forest before your flashlight battery dies. There are also clues in the forest to find. </p>
+                            <p>This game was made for the hackathon VandyHacks. We chose to combine Microsoft's Mixer API with Unity to make an interactive game when livestreamed.</p>
+                            <p>The player (live-streamer) is given an authentication code that viewers will need to submit through Mixer.com/go to have access to the interactivity of the game. The viewer will then see a list of buttons on their channel page which allow the viewer to spawn enemies directly behind the player or leave an in-game note.</p>        
+                        </div>
                     </div>
-                    <br>
-                    <div style="width: 88%">
-                        <h2 class="section-header">Goal</h2>
-                        <p>The goal for this project was to combine Unity with the Mixer API to serve as our "hack" for VandyHacks. We wanted to give viewers watching someone play a game the chance to interact with the streamer's gameplay live.</p>
-                    </div>
-                    <br>
-                    <div style="width: 88%">
-                        <h2 class="section-header">My Role</h2>
-                        <p>I programmed the interactivity portion of the game and worked mostly with the Mixer API. I also programmed the note system.</p>
-                    </div>
+                </div>
+                <div class="role-div">
+                    <h2 class="section-header">Goal</h2>
+                    <p>The goal for this project was to combine Unity with the Mixer API to serve as our "hack" for VandyHacks. We wanted to give viewers watching someone play a game the chance to interact with the streamer's gameplay live.</p>
+                </div>
+                <div class="role-div" style="margin-top: 0px!important">
+                    <h2 class="section-header">My Role</h2>
+                    <p>I programmed the interactivity portion of the game and worked mostly with the Mixer API. I also programmed the note system.</p>
                 </div>
             </div>
         </div>     
     </mdb-carousel-item>
     <mdb-carousel-item>
         <div class="item-div">
-            <div class="header-div">
-                <a class="back-button" routerLink="/project-overview"><i class="material-icons arrow-back">arrow_back</i></a>
-                <div><h1 class="title">Tigerbook Social Network</h1></div>
-                <div class="programmer">
-                    <a><i class="material-icons" style="font-size: 12pt">code</i><span style="display: block; margin-top: -1%; font-size: 10pt;">C++</span></a>
-                </div>
-                <div class="project-lead">
-                    <mdb-icon fas icon="book-open"></mdb-icon><span style="display: block; font-size: 10pt;"> Academic Project</span>
-                </div>
-            </div>
             <div class="container-div">
-                <div class="left-div"><img class="d-block w-100" style="width: 88%" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" /><img class="d-block w-100" style="width: 88%" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" /></div>
+                <div class="left-div">
+                    <mdb-carousel [animation]="'slide'" [interval]="'0'">
+                        <mdb-carousel-item>
+                            <img class="d-block w-100"  src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" />
+                        </mdb-carousel-item>
+                        <mdb-carousel-item>
+                            <img class="d-block w-100"  src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" />
+                        </mdb-carousel-item>
+                    </mdb-carousel>
+                </div>
                 <div class="right-div">
-                <br>
-                    <div style="width: 88%">
+                    <h1 class="title">Tigerbook Social Network</h1>
+                    <div class="icons code-icon">
+                        <a><i class="material-icons">code</i><span style="margin-top: -10px; font-size: 9pt;">C++</span></a>
+                    </div>
+                    <div class="icons not-first-icon linux-icon">
+                        <a><mdb-icon fab icon="linux"></mdb-icon><span style="margin-top: -10px; font-size: 9pt;">Linux</span></a>
+                    </div>
+                    <div class="icons not-first-icon academic-icon">
+                        <a><mdb-icon fas icon="book-open"></mdb-icon><span style="margin-top: -10px; font-size: 9pt;">Academic Project</span></a>
+                    </div>
+                    <div class="icons not-first-icon">
+                        <a href="https://github.com/orlesianroyalty/Distributed-TigerBook-Social-Network"><i class="fab fa-github" style="font-size: 16pt"></i></a>
+                    </div>
+                    <br>
+                    <div class="description">
                         <h2 class="section-header">Overview</h2>
                         <p>This project is an academic project for my software construction class. It was created in C++ in Linux. It allows a user to send a message to another user or to a group as well as read their messages. All messages are stored in files that are tied to the user's account in Auburn's network so the files can be accessed when logged in to any computer.</p>
                     </div>
-                    <br>
-                    <div style="width: 88%">
-                        <h2 class="section-header">Goal</h2>
-                        <p>The goal for this project was to explore file editing and reading in C++ as well as programming using Linux.</p>
-                    </div>
-                    <br>
-                    <div style="width: 88%">
-                        <h2 class="section-header">My Role</h2>
-                        <p>This was an individual project so I programmed the project in its entirety.</p>
-                    </div>
+                </div>
+                <div class="role-div">
+                    <h2 class="section-header">Goal</h2>
+                    <p>The goal for this project was to explore file editing and reading in C++ as well as programming using Linux.</p>
+                </div>
+                <div class="role-div" style="margin-top: 0px!important;">
+                    <h2 class="section-header">My Role</h2>
+                    <p>This was an individual project so I programmed the project in its entirety.</p>
                 </div>
             </div>
         </div>     
     </mdb-carousel-item>
     <mdb-carousel-item>
         <div class="item-div">
-            <div class="header-div">
-                <a class="back-button" routerLink="/project-overview"><i class="material-icons arrow-back">arrow_back</i></a>
-                <div><h1 class="title">The Forest</h1></div>
-                <div class="programmer">
-                    <a><i class="material-icons">code</i><span style="display: block; margin-top: -10px; font-size: 10pt;">C#</span></a>
-                </div>
-                <div class="project-lead">
-                    <a><i class="material-icons">people</i><span style="display: block; margin-top: -10px; font-size: 10pt;">Group Project</span></a>
-                </div>
-                <div class="event">
-                    <a><mdb-icon far icon="calendar-alt"></mdb-icon><span style="display: block; margin-top: -4px; font-size: 10pt;">Hackathon</span></a>
-                </div>
-            </div>
             <div class="container-div">
-                <div class="left-div"><img class="d-block w-100" style="width: 88%" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" /><img class="d-block w-100" style="width: 88%" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" /></div>
+                <div class="left-div">
+                    <mdb-carousel [animation]="'slide'" [interval]="'0'">
+                        <mdb-carousel-item>
+                            <img class="d-block w-100"  src="../../assets/images/Screen Shot 2019-08-20 at 6.09.49 PM.png"/>
+                        </mdb-carousel-item>
+                        <mdb-carousel-item>
+                            <img class="d-block w-100"  src="../../assets/images/Screen Shot 2019-08-20 at 6.10.04 PM.png"/>
+                        </mdb-carousel-item>
+                        <mdb-carousel-item>
+                            <img class="d-block w-100"  src="../../assets/images/Screen Shot 2019-08-20 at 6.10.21 PM.png"/>
+                        </mdb-carousel-item>
+                        <mdb-carousel-item>
+                            <img class="d-block w-100"  src="../../assets/images/Screen Shot 2019-08-20 at 6.10.35 PM.png"/>
+                        </mdb-carousel-item>
+                        <mdb-carousel-item>
+                            <img class="d-block w-100"  src="../../assets/images/Screen Shot 2019-08-20 at 6.10.43 PM.png"/>
+                        </mdb-carousel-item>
+                    </mdb-carousel>
+                </div>
                 <div class="right-div">
-                <br>
-                    <div style="width: 88%">
-                        <h2 class="section-header">Overview</h2>
-                        <p>The Forest is a horror game in which the player is camping in the forest. Your goal as the player is to escape the forest before your flashlight battery dies. If curiosity gets the better of you, you can attempt to find all of the clues about the forest before your battery dies. </p>
-                        <p>This game was made for the hackathon VandyHacks. We chose to combine Microsoft's Mixer API with Unity to make an interactive game when livestreamed.</p>
-                        <p>The player (the live-streamer) starts up the game and is given an authentication code that viewers will need to submit through Mixer.com/go to have access to the interactivity of the game. From there, the viewer will see a list of buttons mapped like a controller on their channel page on Mixer.com. These buttons will allow the viewer to spawn enemies directly behind the player to try to scare them or leave an in-game note for the live-streamer to read. There are three different types of notes and each type of note has three variations.</p>
+                    <div>
+                        <h1 class="title">Snakes and Ladders</h1>  
+                    </div>
+                    <div class="icons code-icon">
+                        <a><i class="material-icons">code</i><span style="margin-top: -10px; font-size: 9pt;">C++</span></a>
+                    </div>
+                    <div class="icons not-first-icon linux-icon">
+                        <a><mdb-icon fab icon="linux"></mdb-icon><span style="margin-top: -10px; font-size: 9pt;">Linux</span></a>
+                    </div>
+                    <div class="icons not-first-icon academic-icon">
+                        <a><mdb-icon fas icon="book-open"></mdb-icon><span style="margin-top: -10px; font-size: 9pt;">Academic Project</span></a>
+                    </div>
+                    <div class="icons not-first-icon">
+                        <a href="https://github.com/orlesianroyalty/SnakesandLaddersGame"><i class="fab fa-github" style="font-size: 16pt"></i></a>
                     </div>
                     <br>
-                    <div style="width: 88%">
-                        <h2 class="section-header">Goal</h2>
-                        <p>The goal for this project was to combine Unity with the Mixer API to serve as our "hack" for VandyHacks. We wanted to give viewers watching someone play a game the chance to interact with the streamer's gameplay live.</p>
-                    </div>
-                    <br>
-                    <div style="width: 88%">
-                        <h2 class="section-header">My Role</h2>
-                        <p>I programmed the interactivity portion of the game and worked mostly with the Mixer API. I also programmed the note system.</p>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </mdb-carousel-item>
-    <mdb-carousel-item>
-        <div class="item-div">
-            <div class="header-div">
-                <a class="back-button" routerLink="/project-overview"><i class="material-icons arrow-back">arrow_back</i></a>
-                <div><h1 class="title">Snakes and Ladders</h1></div>
-                <div class="programmer">
-                    <a><i class="material-icons" style="font-size: 12pt">code</i><span style="display: block; margin-top: -1%; font-size: 10pt;">C++</span></a>
-                </div>
-                <div class="project-lead">
-                    <mdb-icon fas icon="book-open"></mdb-icon><span style="display: block; font-size: 10pt;"> Academic Project</span>
-                </div>
-            </div>
-            <div class="container-div">
-                <div class="left-div"><img class="d-block w-100" style="width: 88%" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" /><img class="d-block w-100" style="width: 88%" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" /></div>
-                <div class="right-div">
-                <br>
-                    <div style="width: 88%">
+                    <div class="description">
                         <h2 class="section-header">Overview</h2>
                         <p>This project is an academic project for my software construction class. It was created in C++ in Linux. It is a maze game where the player has to exit the maze via snakes and ladders.</p>
                     </div>
-                    <br>
-                    <div style="width: 88%">
+                    
+                    <div class="description">
                         <h2 class="section-header">Goal</h2>
                         <p>The goal for this project was to understand breadth-first search and depth-first search.</p>
                     </div>
-                    <br>
-                    <div style="width: 88%">
-                        <h2 class="section-header">My Role</h2>
-                        <p>This was an individual project so I programmed the project in its entirety.</p>
-                    </div>
+                </div>
+                <div class="role-div" style="margin-bottom: 50px">
+                    <h2 class="section-header">My Role</h2>
+                    <p>This was an individual project so I programmed the project in its entirety.</p>
                 </div>
             </div>
         </div> 
     </mdb-carousel-item>
     <mdb-carousel-item>
         <div class="item-div">
-            <div class="header-div">
-                <a class="back-button" routerLink="/project-overview"><i class="material-icons arrow-back">arrow_back</i></a>
-                <div><h1 class="title">Home</h1></div>
-                <div class="programmer">
-                    <a><i class="material-icons">code</i><span style="display: block; margin-top: -10px; font-size: 10pt;">C#</span></a>
-                </div>
-                <div class="project-lead">
-                        <mdb-icon fas icon="book-open"></mdb-icon><span style="display: block; font-size: 10pt;"> Academic Project</span>
-                </div>
-            </div>
             <div class="container-div">
                 <div class="left-div">
-                       <!--
-                        <div class="button-container-prev"><a><i class="material-icons arrow-prev">arrow_back</i></a></div>
-                       --> 
-                    <img class="d-block w-100" style="width: 88%" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" /><img class="d-block w-100" style="width: 88%" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" />
+                    <mdb-carousel [animation]="'slide'" [interval]="'0'">
+                        <mdb-carousel-item>
+                            <iframe [src]='videoHome' width="100%" height="250px" frameborder="0" allowfullscreen></iframe>
+                        </mdb-carousel-item>
+                    </mdb-carousel>
                 </div>
                 <div class="right-div">
-                    <!--
-                        <div class="button-container"><a routerLink="/the-forest"><i class="material-icons arrow-forward">arrow_forward</i></a></div>
-                    -->
+                    <div>
+                        <h1 class="title">Home</h1>      
+                    </div>
+                    <div class="icons code-icon">
+                        <a><i class="material-icons">code</i><span style="margin-top: -10px; font-size: 9pt;">C#</span></a>
+                    </div>
+                    <div class="icons not-first-icon academic-icon">
+                        <a><mdb-icon fas icon="book-open"></mdb-icon><span style="margin-top: -10px; font-size: 9pt;">Academic Project</span></a>
+                    </div>
                     <br>
-                    <div style="width: 88%">
+                    <div class="description">
                         <h2 class="section-header">Overview</h2>
                         <p>Home is a 2D game made in Unity for my game design and development class. The project had to be academic related so I chose to base the game around our solar system.</p>    
                         <p>The player plays as an alien lost in our solar system and the player has to help him leave our solar system. The player does this by navigating his ship over the correct sequence of planets in our solar system.</p>
                     </div>
-                    <br>
-                    <div style="width: 88%">
+                </div>
+                <div class="role-div">
                         <h2 class="section-header">Goal</h2>
                         <p>The goal for this project was to create an educational game in Unity. I added in my own personal goal of trying out more of Unity's canvas capabilities so I added in menus.</p>
-                    </div>
-                    <br>
-                    <div style="width: 88%">
-                        <h2 class="section-header">My Role</h2>
-                        <p>Since this was an individual project I designed and programmed the game.</p>
-                    </div>
+                </div>
+                <div class="role-div" style="margin-top: 0px!important;">
+                    <h2 class="section-header">My Role</h2>
+                    <p>Since this was an individual project I designed and programmed the game.</p>
                 </div>
             </div>
         </div>
     </mdb-carousel-item>
     <mdb-carousel-item>
         <div class="item-div">
-            <div class="header-div">
-                <a class="back-button" routerLink="/project-overview"><i class="material-icons arrow-back">arrow_back</i></a>
-                <div><h1 class="title">Dracarys</h1></div>
-                <div class="programmer">
-                    <a><i class="material-icons" style="font-size: 12pt">code</i><span style="display: block; margin-top: -1%; font-size: 10pt;">C#</span></a>
-                </div>
-            </div>
             <div class="container-div">
-                <div class="left-div"><img class="d-block w-100" style="width: 88%" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" /><img class="d-block w-100" style="width: 88%" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" /></div>
+                <div class="left-div">
+                    <mdb-carousel [animation]="'slide'" [interval]="'0'">
+                        <mdb-carousel-item>
+                            <img class="d-block w-100"  src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" />
+                        </mdb-carousel-item>
+                    </mdb-carousel>
+                </div>
                 <div class="right-div">
-                <br>
-                    <div style="width: 88%">
+                    <div>
+                        <h1 class="title">Dracarys</h1>   
+                    </div>
+                    <div class="icons code-icon">
+                        <a><i class="material-icons">code</i><span style="margin-top: -10px; font-size: 9pt;">C#</span></a>
+                    </div>
+                    <div class="icons not-first-icon">
+                        <a href="https://github.com/orlesianroyalty/Dracarys"><i class="fab fa-github" style="font-size: 16pt"></i></a>
+                    </div>
+                    <br>
+                    <div class="description">
                         <h2 class="section-header">Overview</h2>
                         <p>Dracarys is an arcade style game made in Unity. It is based off of Game of Thrones when Daenerys and Drogon burn the Lannister army down.</p>
                         <p>The player controls Drogon who is flying over the Lannister army. The player can make Drogon shoot fireballs to score points. Drogon only has 3 lives before the game is over.</p>
                     </div>
-                    <br>
-                    <div style="width: 88%">
-                        <h2 class="section-header">Goal</h2>
-                        <p>The goal for this project was to familarize myself with Unity more since this was my first solo Unity project.</p>
+                    <div class="description">
+                            <h2 class="section-header">Goal</h2>
+                            <p>The goal for this project was to familarize myself with Unity more since this was my first solo Unity project.</p>
                     </div>
-                    <br>
-                    <div style="width: 88%">
-                        <h2 class="section-header">My Role</h2>
-                        <p>This was an individual project so I programmed and designed the project in its entirety.</p>
-                    </div>
+                </div>
+                <div class="role-div">
+                    <h2 class="section-header">My Role</h2>
+                    <p>This was an individual project so I programmed and designed the project in its entirety.</p>
                 </div>
             </div>
         </div>     
     </mdb-carousel-item>
     <mdb-carousel-item>
         <div class="item-div">
-            <div class="header-div">
-                <a class="back-button" routerLink="/project-overview"><i class="material-icons arrow-back">arrow_back</i></a>
-                <div><h1 class="title">Dark Brotherhood Lockscreen</h1></div>
-                <div class="programmer">
-                    <a><i class="material-icons" style="font-size: 12pt">code</i><span style="display: block; margin-top: -1%; font-size: 10pt;">Java</span></a>
-                </div>
-            </div>
             <div class="container-div">
-                <div class="left-div"><img class="d-block w-100" style="width: 88%" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" /><img class="d-block w-100" style="width: 88%" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" /></div>
+                <div class="left-div">
+                    <mdb-carousel [animation]="'slide'" [interval]="'0'"> 
+                        <mdb-carousel-item>
+                            <img class="d-block w-100"  src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg" />
+                        </mdb-carousel-item>
+                    </mdb-carousel>   
+                </div>
                 <div class="right-div">
-                <br>
-                    <div style="width: 88%">
+                    <div>
+                        <h1 class="title">Dark Brotherhood Lockscreen</h1> 
+                    </div>
+                    <div class="icons code-icon">
+                        <a><i class="material-icons">code</i><span style="margin-top: -10px; font-size: 9pt;">Java</span></a>
+                    </div>
+                    <div class="icons not-first-icon mobile-icon">
+                        <a><i class="material-icons">stay_current_portrait</i><span style="margin-top: -10px; font-size: 9pt;">Mobile App</span></a>
+                    </div>
+                    <br>
+                    <div class="description">
                         <h2 class="section-header">Overview</h2>
                         <p>This is an app for android made in Android Studio. It was inspired by the Black Door from The Elder Scrolls video game series in which the door asks you a riddle and you must respond with the correct answer to enter.</p>    
                     </div>
-                    <br>
-                    <div style="width: 88%">
+                    <div class="description">
                         <h2 class="section-header">Goal</h2>
                         <p>The goal for this project was to create a mobile app for my phone using Android Studio.</p>
                     </div>
-                    <br>
-                    <div style="width: 88%">
-                        <h2 class="section-header">My Role</h2>
-                        <p>This was an individual project so I programmed and designed the project in its entirety.</p>
-                    </div>
+                </div>
+                <div class="role-div">
+                    <h2 class="section-header">My Role</h2>
+                    <p>This was an individual project so I programmed and designed the project in its entirety.</p>
                 </div>
             </div>
         </div> 
