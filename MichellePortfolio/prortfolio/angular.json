@@ -39,7 +39,9 @@
             ],
             "scripts": [
               "node_modules/chart.js/dist/Chart.js",
-              "node_modules/hammerjs/hammer.min.js"
+              "node_modules/hammerjs/hammer.min.js",
+              "src/three.r92.min.js",
+              "src/vanta.waves.min.js"
             ]
           },
           "configurations": {

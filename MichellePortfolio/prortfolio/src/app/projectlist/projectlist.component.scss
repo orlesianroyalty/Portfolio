@@ -58,6 +58,7 @@ img {
     border-radius: 4px; 
     margin-top: 50px; 
     margin-bottom: 50px;
+    background-color: white;
 }
 .left-div {
     width: 58%; 
@@ -86,6 +87,12 @@ img {
 .description {
     text-align: left; 
     margin-top: 10px;
+}
+.download-icon {
+    background-color: #494bd6;
+}
+.download-icon:hover{
+    background-color: #14257d;
 }
 p {
     font-size: 9pt;
