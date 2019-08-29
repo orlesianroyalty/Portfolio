@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProjectlistComponent } from './projectlist/projectlist.component';
 import { routerTransition } from './animations';
 import { trigger, transition, animate, style } from '@angular/animations';
+import { Title } from '@angular/platform-browser';
 
 declare var VANTA;
 
@@ -19,7 +20,11 @@ declare var VANTA;
   ]
 })
 export class AppComponent implements OnInit {
-  title = 'prortfolio';
+  title = 'Michelle Brannan';
+
+  constructor(private titleServ: Title) {
+    this.titleServ.setTitle(this.title);
+  }
 
   getState(outlet) {
     return outlet.activatedRouteData.state;
@@ -28,10 +33,11 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     VANTA.WAVES({
       el: "#container-main",
-      color: 0xc0cfeb,
-      shininess: 77.00,
-      waveSpeed: 0.30,
-      zoom: 0.70
+      color: 0x8ca6b6,
+      shininess: 10.00,
+      waveSpeed: 0.35,
+      waveHeight: 8,
+      zoom: 1.00
     })
   }
 }

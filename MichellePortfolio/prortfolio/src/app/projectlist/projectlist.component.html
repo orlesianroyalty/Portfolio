@@ -9,17 +9,23 @@
                 <div style="padding-left: 10%; padding-right: 10%">
                     <p>Hello! I am a programmer and avid RPG fan.</p>
                     <p>
-                        I graduated from Auburn University with a Bachelor of Software Engineering in August 2019. I was a member of Auburn's video game development club, TigerDev, for 4 years and served as an officer my senior year. I also created this portfolio myself using Angular.
+                        I graduated from Auburn University with a Bachelor of Software Engineering in August 2019. I was a member of Auburn's video game development club, TigerDev, for 4 years and served as an officer my senior year.
                     </p> 
                     <p>I have a passion for programming, video games, learning new technologies, and creating memorable experiences.</p>
                 </div>
                 <br>
-                <div style="font-size: 9pt"><i class="material-icons" style="font-size: 12pt">mail</i> rmb0047@auburn.edu</div>
+                <div style="font-family: initial"><i class="material-icons" style="font-size: 12pt">mail</i> rmb0047@auburn.edu</div>
                 <br>
                 <div style="padding-left: 10%; padding-right: 10%;">
-                    <button type="button" style="width: 100px; height: 30px; padding: 0!important; margin-right: 20px; background-color:#103091; color: white" mdbBtn mdbWavesEffect>Resume</button>
+                    <a href="../../assets/Michelle Resume.pdf" download>
+                        <button type="button" style="width: 100px; height: 30px; padding: 0!important; margin-right: 20px; background-color:#103091; color: white" mdbBtn mdbWavesEffect>Resume</button>
+                    </a>
                     <a href="https://github.com/orlesianroyalty" style="margin-right: 2%"><i class="fab fa-github" style="font-size: 16pt"></i></a>
                     <a href="https://www.linkedin.com/in/michelle-brannan-045804149/"><i class="fab fa-linkedin-in" style="font-size: 16pt"></i></a>
+                </div>
+                <br>
+                <div style="font-family: initial; font-size: 0.8em">
+                    Site developed by me using Angular 
                 </div>
             </div>
         </div>
@@ -28,7 +34,7 @@
         <div class="item-div">
             <div class="container-div">
                 <div class="left-div">
-                    <mdb-carousel [animation]="'fade'" [interval]="'0'">
+                    <mdb-carousel [animation]="'none'" [interval]="'0'">
                         <mdb-carousel-item>
                             <img src="../../assets/images/GaiaScreenshot.png">    
                         </mdb-carousel-item>
@@ -75,7 +81,7 @@
                         <div class="button-container"><a routerLink="/the-forest"><i class="material-icons arrow-forward">arrow_forward</i></a></div>
                     -->
                 </div>
-                <div class="role-div">
+                <div class="role-div" style="margin-top: -15%;">
                     <h2 class="section-header">My Role</h2>
                     <p>I helped come up with the concept for Gaia. I was the project leader for this project after the initial game jam. I assigned tasks to my team members. I also hand drew some of the art used such as the flora and Gaia. I also wrote code for some of Gaia's abilities and wrote the code for Fenrir's AI statemachine for the boss battle.</p>
                 </div>
@@ -86,7 +92,7 @@
         <div class="item-div">
             <div class="container-div">
                 <div class="left-div">
-                    <mdb-carousel [animation]="'fade'" [interval]="'0'">
+                    <mdb-carousel [animation]="'none'" [interval]="'0'">
                         <mdb-carousel-item>
                             <iframe [src]='videoForest' width="100%" height="250px" frameborder="0" allowfullscreen></iframe>
                         </mdb-carousel-item>
@@ -110,17 +116,17 @@
                         <br>
                         <div class="description">
                             <h2 class="section-header">Overview</h2>
-                            <p>The Forest is a 3D horror game in which the player is camping in the forest. Your goal as the player is to escape the forest before your flashlight battery dies. There are also clues in the forest to find. </p>
+                            <p>The Forest is a 3D horror game. Your goal as the player is to escape the forest before your flashlight battery dies.</p>
                             <p>This game was made for the hackathon VandyHacks. We chose to combine Microsoft's Mixer API with Unity to make an interactive game when livestreamed.</p>
                             <p>The player (live-streamer) is given an authentication code that viewers will need to submit through Mixer.com/go to have access to the interactivity of the game. The viewer will then see a list of buttons on their channel page which allow the viewer to spawn enemies directly behind the player or leave an in-game note.</p>        
                         </div>
                     </div>
                 </div>
-                <div class="role-div">
+                <div class="role-div" style="margin-top: -30%!important">
                     <h2 class="section-header">Goal</h2>
                     <p>The goal for this project was to combine Unity with the Mixer API to serve as our "hack" for VandyHacks. We wanted to give viewers watching someone play a game the chance to interact with the streamer's gameplay live.</p>
                 </div>
-                <div class="role-div" style="margin-top: 0px!important">
+                <div class="role-div" style="margin-top: 0px!important; padding-bottom: 10px">
                     <h2 class="section-header">My Role</h2>
                     <p>I programmed the interactivity portion of the game and worked mostly with the Mixer API. I also programmed the note system.</p>
                 </div>
@@ -131,7 +137,7 @@
         <div class="item-div">
             <div class="container-div">
                 <div class="left-div">
-                    <mdb-carousel [animation]="'fade'" [interval]="'0'">
+                    <mdb-carousel [animation]="'none'" [interval]="'0'">
                         <mdb-carousel-item>
                             <img src="../../assets/images/Social1.png">
                         </mdb-carousel-item>
@@ -234,7 +240,7 @@
         <div class="item-div">
             <div class="container-div">
                 <div class="left-div">
-                    <mdb-carousel [animation]="'fade'" [interval]="'0'">
+                    <mdb-carousel [animation]="'none'" [interval]="'0'">
                         <mdb-carousel-item>
                             <img class="d-block w-100"  src="../../assets/images/Screen Shot 2019-08-20 at 6.09.49 PM.png"/>
                         </mdb-carousel-item>
@@ -279,7 +285,7 @@
                         <p>The goal for this project was to understand breadth-first search and depth-first search.</p>
                     </div>
                 </div>
-                <div class="role-div" style="margin-bottom: 50px">
+                <div class="role-div" style="margin-bottom: 12%; margin-top: -20%;">
                     <h2 class="section-header">My Role</h2>
                     <p>This was an individual project so I programmed the project in its entirety.</p>
                 </div>
@@ -290,7 +296,7 @@
         <div class="item-div">
             <div class="container-div">
                 <div class="left-div">
-                    <mdb-carousel [animation]="'fade'" [interval]="'0'">
+                    <mdb-carousel [animation]="'none'" [interval]="'0'">
                         <mdb-carousel-item>
                             <iframe [src]='videoHome' width="100%" height="250px" frameborder="0" allowfullscreen></iframe>
                         </mdb-carousel-item>
@@ -328,7 +334,7 @@
         <div class="item-div">
             <div class="container-div">
                 <div class="left-div">
-                    <mdb-carousel [animation]="'fade'" [interval]="'0'">
+                    <mdb-carousel [animation]="'none'" [interval]="'0'">
                         <mdb-carousel-item>
                             <iframe [src]='videoDracarys' width="100%" height="250px" frameborder="0" allowfullscreen></iframe>
                         </mdb-carousel-item>
@@ -355,7 +361,7 @@
                             <p>The goal for this project was to familarize myself with Unity more since this was my first solo Unity project.</p>
                     </div>
                 </div>
-                <div class="role-div">
+                <div class="role-div" style="margin-top: -20%; padding-bottom: 10%;">
                     <h2 class="section-header">My Role</h2>
                     <p>This was an individual project so I programmed and designed the project in its entirety.</p>
                 </div>
@@ -367,7 +373,7 @@
         <div class="item-div">
             <div class="container-div">
                 <div class="left-div">
-                    <mdb-carousel [animation]="'fade'" [interval]="'0'"> 
+                    <mdb-carousel [animation]="'none'" [interval]="'0'"> 
                         <mdb-carousel-item>
                             <img class="d-block w-100"  src="https://mdbootstrap.com/img/Photos/fades/img%20(130).jpg" />
                         </mdb-carousel-item>
