@@ -104,3 +104,24 @@ p {
     padding-left: 10px;
     padding-right: 10px;
 }
+@media only screen and (max-width: 1190px) {
+    .left-div {
+        width: unset!important;
+        float: none!important;
+        margin-left: 0px!important;
+    }
+    .right-div {
+        width: unset!important;
+        display: unset!important;
+    }
+    .role-div {
+        margin-top: 0px!important;
+        width: unset!important;
+        margin-left: 0px!important;
+        margin-top: 0px!important;
+    }
+    .icons {
+        float: none!important;
+        display: inline-block!important;
+    }
+}
